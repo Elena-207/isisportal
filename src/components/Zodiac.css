@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Sansita";
+  src: url("../fonts/Sansita/Sansita-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Cinzel_Decorative";
+  src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nothing you can do";
+  src: url("../fonts/Nothing_You_Could_Do/NothingYouCouldDo-Regular.ttf");
+}
+.zodiac-signs {
+  height: 100vh;
+  padding-top: 4rem;
+}
+
+h2 {
+  color: rgb(253, 253, 253);
+  font-family: "Cinzel_Decorative", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.zodiac-buttons {
+  margin: 0 7rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.btn-sign {
+  color: bisque;
+  font-family: "Sansita";
+  transition: color 0.3s;
+}
+
+.btn-sign:hover {
+  color: rgb(143, 88, 194);
+  animation: sparkle 1s ease-in-out infinite; /* Apply sparkle animation */
+}
+/* Define the sparkle animation */
+@keyframes sparkle {
+  0%,
+  100% {
+    transform: scale(1); /* Initial and final state */
+  }
+  50% {
+    transform: scale(1.1); /* Scaled state for sparkle effect */
+  }
+}
+
+.sign-info {
+  color: antiquewhite;
+  font-family: "Sansita";
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 5rem;
+}
+
+.zodiac-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------------------------------------------------------*/
+
+/* Media query for small screens*/
+@media (max-width: 767px) {
+  /* Hide the regular navbar */
+  .navbar {
+    display: none;
+  }
+
+  /* Show the hamburger menu */
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .hamburger-menu.open {
+    margin-bottom: 3rem;
+  }
+
+  .menu-item {
+    font-size: 1.6rem;
+  }
+
+  .btn-zodiac {
+    padding: 1.7rem;
+  }
+  .img-btn-zodiac {
+    width: 15rem;
+  }
+
+  .zodiac-signs h2 {
+    font-size: 2.5rem;
+  }
+
+  .zodiac-content {
+    padding-top: 9rem;
+  }
+}
+.zodiac-content h2 {
+  font-size: 2.4rem;
+  margin-top: 0px;
+}
+
+.btn-sign {
+  font-size: 2.1rem;
+}
+.sign-info {
+  font-size: 1.3rem;
+}
+
+/*----------------------------------------------*/
+
+/* Media query for medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-list {
+    margin-top: 3rem;
+  }
+
+  .zodiac-signs h2 {
+    font-size: 3rem;
+  }
+
+  .btn-sign {
+    font-size: 2.5rem;
+  }
+
+  .zodiac-content {
+    padding-top: 7rem;
+  }
+
+  .zodiac-content h2 {
+    font-size: 3rem;
+    margin-top: 0px;
+  }
+
+  .sign-info {
+    font-size: 1.5rem;
+  }
+
+  .btn-read-more {
+    padding-top: 2rem;
+  }
+}
+/*-------------------------------------------------------------*/
+
+/* Media query for large screens*/
+@media (min-width: 1024px) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav-list {
+    margin-top: 4rem;
+  }
+  .home-title {
+    width: 100%;
+  }
+  .btn-zodiac {
+    padding: 1.7rem;
+  }
+  .img-btn-zodiac {
+    width: 20rem;
+  }
+
+  .zodiac-signs h2 {
+    padding-top: 4rem;
+    font-size: 4rem;
+  }
+  .btn-sign {
+    font-size: 3rem;
+  }
+  .zodiac-buttons {
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .zodiac-content h2 {
+    font-size: 4.3rem;
+    margin-top: 8rem;
+    margin-bottom: 0;
+  }
+
+  .sign-info {
+    font-size: 2.2rem;
+    padding: 0 20rem;
+  }
+
+  .btn-read-more {
+    padding-top: 2rem;
+  }
+}
