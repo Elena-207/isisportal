@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url("./fonts/Alegreya_Sans_SC/AlegreyaSansSC-Medium.ttf");
+}
+
+/* Regular styles for the navigation bar */
+
+.nav-item {
+  list-style: none;
+  margin: 0 3rem;
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link {
+  font-family: "Alegreya Sans";
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu{
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+}
+
+.bar{
+  width: 2rem;
+  margin: 0.4rem 1rem;
+  padding: 0.12rem 0.1rem;
+  border-radius: 10px;
+  background-color: azure;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+  
+}
+
+.hamburger-icon{
+  margin: 1rem 0.5rem;
+}
+
+.menu-items{
+  width: 10rem;
+  display: none;
+}
+.menu-item{
+  list-style: none;
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+/* Add animation for the hamburger icon bars */
+.hamburger-icon .bar {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transitions for color and transform */
+}
+
+/* Apply styles to open the menu */
+.hamburger-menu.open {
+  transform: translateX(0);
+  margin: 5rem 1rem; /* Slide in the menu from the left */
+}
+
+/* Apply styles to open the menu items */
+.hamburger-menu.open .menu-items {
+  display: block;
+}
+
+.menu-items.open{
+  margin-top: 0.1rem;
+}
+
+/* ------------------------------------------------------- */
+
+
