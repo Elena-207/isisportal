@@ -64,46 +64,6 @@ const ZodiacSigns = ({ onZodiacSelect }) => {
     },
   ];
 
-
-   // Function to find the zodiac sign based on the provided birthdate
-   const findZodiacSignByDate = (date) => {
-    const [month, day] = date.split("-").map(Number);
-
-    for (const sign of zodiacSigns) {
-      const [startMonth, startDay] = sign.date.split(" - ")[0].split(" ");
-      const [endMonth, endDay] = sign.date.split(" - ")[1].split(" ");
-
-      if (
-        (month === getMonthNumber(startMonth) && day >= parseInt(startDay)) ||
-        (month === getMonthNumber(endMonth) && day <= parseInt(endDay))
-      ) {
-        return sign;
-      }
-    }
-
-    // If no sign is found, return null or handle the case as needed
-    return null;
-  };
-
-  const getMonthNumber = (monthName) => {
-    const months = {
-      January: 1,
-      February: 2,
-      March: 3,
-      April: 4,
-      May: 5,
-      June: 6,
-      July: 7,
-      August: 8,
-      September: 9,
-      October: 10,
-      November: 11,
-      December: 12,
-    };
-
-    return months[monthName];
-  };
-
   const handleZodiacSelect = (sign) => {
     onZodiacSelect(sign);
   };
