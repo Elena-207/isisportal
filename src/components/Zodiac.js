@@ -138,10 +138,6 @@ const Zodiac = () => {
         />
       )}
 
-      {showZodiacSigns && !selectedZodiacSign && (
-        <ZodiacSigns onZodiacSelect={handleZodiacSelect} />
-      )}
-
       {selectedZodiacSign && (
         <div className="zodiac-content">
           <h2>{selectedZodiacSign.name}</h2>
