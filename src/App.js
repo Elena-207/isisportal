@@ -6,6 +6,7 @@ import TarotReading from "./components/TarotReading";
 import Zodiac from "./components/Zodiac";
 import HamburgerMenu from "./components/HamburgerMenu";
 import Footer from "./components/Footer";
+import "./Responsive.css";
 
 function App() {
   return (
