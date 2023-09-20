@@ -145,7 +145,7 @@
   }
 
   .footer-container .footer-text {
-    font-size: 0.8rem;
+   display: none;
   }
 
   .home-title h1 {
