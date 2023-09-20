@@ -41,6 +41,7 @@
 
   .footer-container .footer-text {
     font-size: 0.8rem;
+    bottom: 0;
   }
 
   button img,
